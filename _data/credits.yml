@@ -1,0 +1,43 @@
+# Credit links
+
+apispots:
+  - name: The API Evangelist
+    url: http://apievangelist.com/
+
+  - name: swagger.io
+    url: http://swagger.io/  
+
+  - name: Bootstrap
+    url: http://getbootstrap.com/
+
+swaggered:
+  - name: The API Evangelist
+    url: http://apievangelist.com/
+
+  - name: swagger.io
+    url: http://swagger.io/  
+
+  - name: Bootstrap
+    url: http://getbootstrap.com/
+
+  - name: VisJS
+    url: http://visjs.org/
+    
+bdd:
+  - name: The API Evangelist
+    url: http://apievangelist.com/
+
+  - name: swagger.io
+    url: http://swagger.io/
+  
+  - name: Bootstrap
+    url: http://getbootstrap.com/
+
+  - name: Cucumber
+    url: http://cucumber.io/  
+    
+  - name: Unirest
+    url: http://unirest.io/  
+    
+  - name: ChaiJS
+    url: http://chaijs.com/  

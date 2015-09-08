@@ -1,0 +1,53 @@
+body {
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.hljs {
+	background:transparent!important;
+}
+
+.bs-docs-header, .bs-docs-masthead {
+	background-color: #d35400!important;
+	background-image: none;
+	color: #ecf0f1!important;
+}
+
+.bs-example.recipe:after {
+	content: 'Recipe'
+}
+
+.bs-example.feature:after {
+	content: 'Feature'
+}
+
+.bs-example.background:after {
+	content: 'Background'
+}
+
+.bs-example.scenario:after {
+	content: 'Scenario'
+}
+
+.bs-example.ingredient:after {
+	content: 'Ingredient'
+}
+
+.bs-example.swagger-api:after {
+	content: 'Swagger API'
+}
+
+.bs-example.swagger-api:after {
+	content: 'REST API'
+}
+.step-definition {
+	color: #9b59b6;
+}
+
+.step-definition .param {
+	color: #e67e22;
+}
