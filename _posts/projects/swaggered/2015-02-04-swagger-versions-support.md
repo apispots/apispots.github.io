@@ -2,7 +2,7 @@
 layout: project.swaggered.feature
 title: Support for both v1.2 and v2.0 Swagger formats
 excerpt: "Navigate the full API graph and see how resources are interconnected."
-categories: apispots/swaggered
+categories: projects/swaggered
 tags: [swagger,spec]
 image:
   thumb: apispots/swaggered/img/swagger-logo.png

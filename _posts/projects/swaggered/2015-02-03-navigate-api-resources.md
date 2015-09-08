@@ -2,7 +2,7 @@
 layout: project.swaggered.feature
 title: Navigate API resources
 excerpt: "Navigate the full API graph and see how resources are interconnected."
-categories: apispots/swaggered
+categories: projects/swaggered
 tags: [api,graph]
 image:
   thumb: apispots/swaggered/img/api-navigate-resources.png

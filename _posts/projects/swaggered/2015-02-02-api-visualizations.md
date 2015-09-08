@@ -2,7 +2,7 @@
 layout: project.swaggered.feature
 title: Swagger powered API Visualizations
 excerpt: "View visual representation of APIs with a click"
-categories: apispots/swaggered
+categories: projects/swaggered
 tags: [api,graph]
 image:
   thumb: apispots/swaggered/img/api-visualization.png

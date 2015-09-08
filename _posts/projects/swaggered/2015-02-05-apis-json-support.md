@@ -2,7 +2,7 @@
 layout: project.swaggered.feature
 title: Support for APIs.json catalogs
 excerpt: "Navigate API catalogs defined with the APIs.json format."
-categories: apispots/swaggered
+categories: projects/swaggered
 tags: [API,catalog,APIs.json]
 image:
   thumb: apispots/swaggered/img/apis-json.png

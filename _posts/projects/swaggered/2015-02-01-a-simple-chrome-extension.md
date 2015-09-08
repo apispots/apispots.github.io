@@ -2,7 +2,7 @@
 layout: project.swaggered.feature
 title: A simple Chrome extension
 excerpt: "Download and install it directly on your Chrome browser."
-categories: apispots/swaggered
+categories: projects/swaggered
 tags: [chrome,extension]
 image:
   thumb: apispots/swaggered/img/chrome-ext.png
