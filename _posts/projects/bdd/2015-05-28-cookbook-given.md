@@ -5,7 +5,7 @@ headline: Given
 description: All the supported Given step definitions.
 excerpt: "API Testing for Humans"
 search_omit: true
-categories: apispots/bdd
+categories: projects/bdd
 tags: [apispots,bdd,testing]
 ---
 
