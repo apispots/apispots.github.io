@@ -2,14 +2,17 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-{% include head-swaggered.html %}
+    {% include head-swaggered.html %}
 </head>
 
 <body id="page-top">
 
-	    <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,112 +64,102 @@
 
     </div>
     <!-- /.intro-header -->
-	
-	 <!-- Page Content -->
-	<a name="features"></a>	
-	{% for post in site.categories['projects/swaggered'] reversed %} 
-		
-		{% assign loopindex = forloop.index | modulo: 2 %}
-		
-		{% if loopindex == 1 %}
-		<div class="content-section-a">
 
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-5 col-sm-6">
-	                    <hr class="section-heading-spacer">
-	                    <div class="clearfix"></div>
-	                   	<h2 class="section-heading"><a href='{{ site.url }}{{ post.url }}'>{{ post.title }} </a></h2>
-	                    <p class="lead">{{ post.excerpt }}</p>
-	                </div>
-	                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-	                    <img class="img-responsive img-thumbnail" src="{{site.url}}/assets/{{ post.image.thumb}}" alt="">
-	                </div>
-	            </div>
-	
-	        </div>
-	  	 </div>
-	  	 
-	  	 {% else %}
-			
-			<div class="content-section-b">
+    <!-- Page Content -->
+    <a name="features"></a>
+    {% for post in site.categories['projects/swaggered'] reversed %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex == 1 %}
+    <div class="content-section-a">
 
-		        <div class="container">
-		
-		            <div class="row">
-		                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-		                    <hr class="section-heading-spacer">
-		                    <div class="clearfix"></div>
-		                    <h2 class="section-heading"><a href='{{ site.url }}{{ post.url }}'>{{ post.title }} </a></h2>
-		                    <p class="lead">{{ post.excerpt }}</p>
-		                </div>
-		                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-		                    <img class="img-responsive img-thumbnail" src="{{site.url}}/assets/{{ post.image.thumb}}" alt="">
-		                </div>
-		            </div>
-		
-		        </div>
-		        <!-- /.container -->
-		
-		    </div>
-		
-		{% endif %}
-			  
-	{% endfor %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><a href='{{ site.url }}{{ post.url }}'>{{ post.title }} </a></h2>
+                    <p class="lead">{{ post.excerpt }}</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive img-thumbnail" src="{{site.url}}/assets/{{ post.image.thumb}}" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><a href='{{ site.url }}{{ post.url }}'>{{ post.title }} </a></h2>
+                    <p class="lead">{{ post.excerpt }}</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive img-thumbnail" src="{{site.url}}/assets/{{ post.image.thumb}}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    {% endif %} {% endfor %}
 
 
     <!-- /.banner -->
-	<footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                
-                	<p>
-						Designed and built by the <a
-							href="https://twitter.com/chefArchitect" target="_blank">@chefArchitect</a>
-					</p>
-					
-					<div class="social-icons">
-						{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>{% endif %}
-						{% if site.owner.linkedin %}<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>{% endif %}
-						{% if site.owner.github %}<a href="{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>{% endif %}
-					  <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
-					</div>
-                	
-                	
-					<ul class="list-inline">
-					  <li>Special thanks to </li>
-					  <li class="footer-menu-divider">⋅</li>	
-					{% for credit in site.data.credits.swaggered %}
-					  <li><a href="{{ credit.url }}" target='_blank'>{{ credit.name }}</a></li>
-					  <li class="footer-menu-divider">⋅</li>
-					{% endfor %}
-					</ul>
-                	
-                	<p>Powered by the <a href="{{site.url}}/apispots">API Spots</a></p>
-                	
-                	<p class="copyright text-muted small">
-						Code licensed under <a rel="license"
-							href="https://github.com/twbs/bootstrap/blob/master/LICENSE"
-							target="_blank">MIT</a>, documentation under <a rel="license"
-							href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC
+
+                    <p>
+                        Designed and built by the <a href="https://twitter.com/chefArchitect" target="_blank">@chefArchitect</a>
+                    </p>
+
+                    <div class="social-icons">
+                        {% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>{% endif %} {% if site.owner.linkedin %}<a href="http://linkedin.com/in/{{ site.owner.linkedin }}"
+                            title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>{% endif %} {% if site.owner.github %}
+                        <a href="{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>{% endif %}
+                        <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+                    </div>
+
+
+                    <ul class="list-inline">
+                        <li>Special thanks to </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        {% for credit in site.data.credits.swaggered %}
+                        <li><a href="{{ credit.url }}" target='_blank'>{{ credit.name }}</a></li>
+                        <li class="footer-menu-divider">⋅</li>
+                        {% endfor %}
+                    </ul>
+
+                    <p>Powered by the <a href="{{site.url}}/apispots">API Spots</a></p>
+
+                    <p class="copyright text-muted small">
+                        Code licensed under <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC
 							BY 3.0</a>.
-					</p>
-                    
+                    </p>
+
                 </div>
             </div>
         </div>
     </footer>
-	
-	
-	<!-- jQuery -->
+
+
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ site.url }}/assets/themes/creative/js/bootstrap.min.js"></script>
 
-	{% include ga.html %}
-	
+    {% include ga.html %}
+
 </body>
 
 </html>

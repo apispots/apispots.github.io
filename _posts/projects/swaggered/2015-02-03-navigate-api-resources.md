@@ -14,7 +14,7 @@ share: false
 
 Once **Swagger.ed** has generated the API graph, you can navigate it simply by using the mouse.  
 
-## Zoom the graph in & out 
+## Zoom the graph in & out
 
 You can zoom the graph in & out by using the **mouse wheel**.  This will let you focus around specific areas and
 also get a birds-eye view of the topology.
@@ -35,7 +35,7 @@ Double clicking on the central API resource, will display general information ab
 
 ### Inspect API resource paths
 
-Double clicking on a **path resource** will display all the available information, including **supported operations** 
+Double clicking on a **path resource** will display all the available information, including **supported operations**
 (HTTP methods), **request paramaters**, applied **security schemes**, supported **MIME types** and **responses**.
 
 <figure class='half'>
@@ -46,7 +46,7 @@ Double clicking on a **path resource** will display all the available informatio
 
 ### Inspect API model schemas
 
-Double clicking on a **model resource** will display the defined schema for the selected object along with 
+Double clicking on a **model resource** will display the defined schema for the selected object along with
 any required properties.  The schema is displayed in a code box with highlighting.
 
 <figure>
@@ -54,4 +54,4 @@ any required properties.  The schema is displayed in a code box with highlightin
 	<figcaption>Model resource information</figcaption>
 </figure>
 
-<div markdown="0"  class="text-center"><a href="{{ site.url }}/apispots/swaggered/swagger-versions-support/" class="btn">Damn, I have a Swagger v1.2 spec - now what?</a></div>
+<div markdown="0"  class="text-center"><a href="{{ site.url }}/projects/swaggered/swagger-versions-support/" class="btn">Damn, I have a Swagger v1.2 spec - now what?</a></div>
