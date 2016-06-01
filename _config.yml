@@ -11,7 +11,7 @@ url: http://www.apispots.com
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
@@ -40,4 +40,3 @@ owner:
   linkedin: chefarchitect
   google:
     analytics: UA-57180016-1
- 
