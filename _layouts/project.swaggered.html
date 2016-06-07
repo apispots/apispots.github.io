@@ -65,6 +65,17 @@
     </div>
     <!-- /.intro-header -->
 
+    <div class="jumbotron">
+        <div class="container">
+            <h2>A Chrome extension for APIs visualization</h2>
+            <p>
+                <b>swagger.ed</b> is a simple Chrome browser extension that displays a visual representation of an API modelled using the
+                <a href='https://github.com/OAI/OpenAPI-Specification' target="_blank">OpenAPI</a> spec (aka <a href='http://swagger.io/' target="_blank">Swagger</a>). Simply add the extension on your browser directly from the
+                <a href="https://chrome.google.com/webstore/detail/swaggered/kaggdmjacnelneophkagkdljffninnpd" target="_blank">Web Store</a> and visualize API definitions directly from the raw JSON / YAML format.
+            </p>
+        </div>
+    </div>
+
     <!-- Page Content -->
     <a name="features"></a>
     {% for post in site.categories['projects/swaggered'] reversed %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex == 1 %}
@@ -111,6 +122,17 @@
 
     {% endif %} {% endfor %}
 
+    <div class="jumbotron">
+        <div class="container">
+            <h2>Looking for examples?</h2>
+            <p>
+              If you need some real life API specs to have a go with the extension,
+              have a look at the fantastic <a href="http://theapistack.com/" target="_blank">API Stack</a> catalogue by
+              the <a href="http://apievangelist.com/" target="_blank">API Evangelist</a> (Kin Lane). Almost all the registered APIs
+              have an OpenAPI spec that you can open and visualize using the add-on.
+            </p>
+        </div>
+    </div>
 
     <!-- /.banner -->
     <footer>
