@@ -19,7 +19,7 @@ For this first example, we will be using the [**OpenWeatherMap** API](http://ope
 
 ## Create the test story file
 
-The first thing we need to do for starting off with our tests, is to create a file that will contain the basic test scenario that we will try out. So, let's create a new empty file and give it the name **first-one.feature**.  Notice the *.feature* suffix - this is a convention used by the *Cucumber* framework and it's good to stick with it for convenience.  If you recall in BDD, test stories usually refer to single features and are meant to be autonomous. 
+The first thing we need to do for starting off with our tests, is to create a file that will contain the basic test scenario that we will try out. So, let's create a new empty file and give it the name **first-one.feature**.  Notice the *.feature* suffix - this is a convention used by the *Cucumber* framework and it's good to stick with it for convenience.  If you recall in BDD, test stories usually refer to single features and are meant to be autonomous.
 
 <div class="bs-callout bs-callout-info">
     <h4>Heads up!</h4>
@@ -27,7 +27,7 @@ The first thing we need to do for starting off with our tests, is to create a fi
 </div>
 
 
-## Add a test feature 
+## Add a test feature
 
 For a full reference on the Gherkin syntax, please read the [reference manual](https://cucumber.io/docs/reference){:target='_blank'} on the web site of the Cucumber framework.
 {:class="lead"}
@@ -40,13 +40,19 @@ Let's suppose we are prospect clients of this API and we want to make sure that 
 
 The API structure is pretty much self explanatory, so let's give it a spin by testing the **Current weather data** feature.    
 
+<div class="bs-callout bs-callout-info">
+    <h4>Heads up!</h4>
+    <p>Before accessing the OpenWeatherMap API you need to get
+    your own API key.  Read the instructions <a href='http://openweathermap.org/price_subscribe' target='_blank'>here</a>.</p>
+</div>
+
 <div class="bs-example feature">
-   Copy and paste the following Gherkin snippet into the feature file.  This section is the feature title and a short description on what this 
-   test is all about. 
+   Copy and paste the following Gherkin snippet into the feature file.  This section is the feature title and a short description on what this
+   test is all about.
 </div>
 <div class="highlight"><pre><code class="gherkin" data-lang="gherkin_en">
 Feature: OpenWeatherMap API - Current weather data
-  
+
   As a client of the OpenWeatherMap API
   I want to run tests
   In order to validate 'Current weather data' operations
@@ -70,17 +76,19 @@ Note that this is a versioned API and this reflects to the URL (the */2.5* part 
 The background section is an important part of the service - in Gherkin a <b>Background</b> section is executed prior to any of the test scenarios to follow and is a convenient way of re-using a number of steps that are required to be executed before hand prior to any other step within a test feature file.  
 </div>
 <div class="highlight"><pre><code class="gherkin" data-lang="gherkin_en">
-  Background: 
+  Background:
     Given a "REST" API definition at "http://api.openweathermap.org/data/2.5"
+    And security query param "appid" equals "[enter your API key here]"
 </code></pre></div>
 
-What we have done here is to tell the service that we will be testing a **generic REST** API with base definition at URL *http://api.openweathermap.org/data/2.5*.  As you will see next, all endpoint operations will reuse this base URL information in a *relative path* mode.  
+What we have done here is to tell the service that we will be testing a **generic REST** API with base definition at URL *http://api.openweathermap.org/data/2.5*.  As you will see next, all endpoint operations will reuse this base URL
+information in a *relative path* mode.  We have also added a security query param called **appid** that will be included
+in every executed request to the API.  This way, you don't have to explicitly include it every time in each scenario.
 
-<div class="bs-callout bs-callout-info">
-    <h4>Recipe</h4>
-    <p>This <b>Given</b> statement is provided by the service as is and the only thing you need to do is to specify the API definition type and URL.</p>
-    <blockquote>Given a "REST | Swagger | ...]" API definition at "[base or definition URL]"</blockquote>
-</div>
+This **Given** statement is provided by the service as is and the only thing you need to do is to specify the API definition type and URL.
+
+> Given a "REST | Swagger | ...]" API definition at "[base or definition URL]"
+
 
 ## Let's write a first scenario
 
@@ -93,7 +101,7 @@ From the documentation we can see that the current weather feature is provided t
 </div>
 <div class="highlight"><pre><code class="gherkin" data-lang="gherkin_en">
   Scenario: Call current weather data for one location and by city name
-  
+
     Given endpoint "/weather" and method "get"
       And request query param "q" equals "London,UK"
       And request type "application/json"
@@ -101,7 +109,7 @@ From the documentation we can see that the current weather feature is provided t
     Then response status is "ok"
 </code></pre></div>
 
-Let's break down the snippet to see what we have stated.  Each line in this snippet is called a **test step** in BDD terminology and defines an action the system has to take in order to execute the test.  Test steps are executed in turn and in the sequence they are defined. All steps are templated and provided by our service - you can think of them as testing ingredients.  You can potentially mix-n-match these step templates in order to compose your tests. 
+Let's break down the snippet to see what we have stated.  Each line in this snippet is called a **test step** in BDD terminology and defines an action the system has to take in order to execute the test.  Test steps are executed in turn and in the sequence they are defined. All steps are templated and provided by our service - you can think of them as testing ingredients.  You can potentially mix-n-match these step templates in order to compose your tests.
 
 ### Given
 
@@ -130,14 +138,14 @@ Your test file should look something like this.
 </div>
 <div class="highlight"><pre><code class="gherkin" data-lang="gherkin_en">
 Feature: OpenWeatherMap API - Current weather data
-  
+
   As a client of the OpenWeatherMap API
   I want to run tests
   In order to validate 'Current weather data' operations
 
-  Background: 
+  Background:
     Given a "REST" API definition at "http://api.openweathermap.org/data/2.5"
-    
+
   Scenario: Get current weather data for one location and by city name
 
     Given endpoint "/weather" and method "get"
@@ -150,7 +158,7 @@ Feature: OpenWeatherMap API - Current weather data
 
 ### Use Swagger Explorer
 
-You can interact with the service directly through the Swagger Explorer application running at 
+You can interact with the service directly through the Swagger Explorer application running at
 
 > [http://localhost:3000/docs](http://localhost:3000/docs){:target='_blank'}
 
@@ -193,7 +201,7 @@ You can use any other REST client tool you wish, e.g. [**curl**](http://curl.hax
     Since we launched the service as a background process, there will be no logs printed out in this terminal window.  In order to view any logging
     activity from the service, you should run the following command on either the same or a different terminal window:
     </p>
-    
+
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">
 <span class="gp">$ </span> docker logs -f apispots-bdd
 </code></pre></div></div>
@@ -258,7 +266,7 @@ According to the docs, this operation requires 2 request params [*lat* & *lon*] 
 
 Run the test again using your favorite method - it should pass.  As you see we have introduced some new ingredients in our test recipe:
 
-### Request parameter map 
+### Request parameter map
 
 <div class="highlight"><pre><code class="gherkin" data-lang="gherkin_en">
     And request query params
@@ -269,7 +277,7 @@ Run the test again using your favorite method - it should pass.  As you see we h
 
 This is a shortcut predefined step that allows us to pass a table of 1 or more [parameter / value] pairs that will be added to the request as query parameters.  The table format is standard Gherkin syntax and the column names are reserved by our service. Here we are passing the 2 required params with numeric values.
 
-### Response data assertion map 
+### Response data assertion map
 
 <div class="highlight"><pre><code class="gherkin" data-lang="gherkin_en">
     And response body has attributes
@@ -292,12 +300,12 @@ Tagging test sections
 </div>
 <div class="highlight"><pre><code class="gherkin" data-lang="gherkin_en">
 Feature: OpenWeatherMap API - Current weather data
-  
+
   As a client of the OpenWeatherMap API
   I want to run tests
   In order to validate 'Current weather data' operations
 
-  Background: 
+  Background:
     Given a "REST" API definition at "http://api.openweathermap.org/data/2.5"
 
   Scenario: Get current weather data for one location and by city name
@@ -306,8 +314,8 @@ Feature: OpenWeatherMap API - Current weather data
     And request type "application/json"
     When the request is executed
     Then response status is "ok"
-  
-  @dev	
+
+  @dev
   Scenario: Get current weather data for one location and by geographic coordinates
     Given endpoint "/weather" and method "get"
     And request query params
@@ -338,6 +346,6 @@ If using other REST client tools, pass the tags as a form parameter, e.g. using 
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">
 $ curl -i -F file=@/home/chris/tests/openweathermap.current.feature -F tags=%40dev  http://localhost:3000/tests/run
-</code></pre></div> 
+</code></pre></div>
 
 Now let's move on to another example to see how we can test a [Swagger powered API]({{site.url}}/projects/bdd/swagger-petstore-api).
