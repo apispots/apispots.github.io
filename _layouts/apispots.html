@@ -69,9 +69,9 @@
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
                     <p class="text-faded">
-                    	API Spots is a collection of tools that are being designed for 
+                    	API Spots is a collection of tools that are being designed for
                     	humans - doesn't matter if you code or not.  Everybody should
-                    	be able to understand and use APIs. 
+                    	be able to understand and use APIs.
                     </p>
                     <a href="#manifest" class="page-scroll btn btn-default btn-xl">Get Started!</a>
                 </div>
@@ -90,32 +90,25 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-users wow bounceIn text-primary"></i>
                         <h3>Made for Humans</h3>
                         <p class="text-muted">Everyone has the right to understand and use APIs.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-plug wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>Plug and Play</h3>
                         <p class="text-muted">No coding skills necessary. Download and use directly.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Up to Date</h3>
                         <p class="text-muted">Technology is changing and so will you.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">When you give love, you get more love back!</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +171,7 @@
                         </div>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -190,39 +183,39 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    
+
                     <p>
-						Designed and built by the <a
-							href="https://twitter.com/chefArchitect" target="_blank">@chefArchitect</a>
-							
-						<a href="https://twitter.com/chefArchitect" class="twitter-follow-button" data-show-count="true">Follow @chefArchitect</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>	
+						Designed and built by <a
+							href="https://github.com/spilio" target="_blank">@spilio</a>
+
+						<a href="https://twitter.com/chrisspilio" class="twitter-follow-button" data-show-count="true">Follow @chrisspilio</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 					</p>
-					
+
 					<div class="social-icons">
 						{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>{% endif %}
 						{% if site.owner.linkedin %}<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>{% endif %}
 						{% if site.owner.github %}<a href="{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>{% endif %}
 					  <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
 					</div>
-					
+
 					<span>Special thanks to </span>
 					<ul class="list-inline">
-					  <li class="footer-menu-divider">⋅</li>	
+					  <li class="footer-menu-divider">⋅</li>
 					{% for credit in site.data.credits.apispots %}
 					  <li><a href="{{ credit.url }}" target='_blank'>{{ credit.name }}</a></li>
 					  <li class="footer-menu-divider">⋅</li>
 					{% endfor %}
 					</ul>
-                    
-                    
+
+
                 </div>
             </div>
         </div>
     </section>
     </aside>
 
- 
+
 	<!-- jQuery -->
     <script src="{{ site.url }}/assets/themes/creative/js/jquery.js"></script>
 
@@ -238,7 +231,7 @@
     <script src="{{ site.url }}/assets/themes/creative/js/creative.js"></script>
 
 	{% include ga.html %}
-	
+
 </body>
 
 </html>
