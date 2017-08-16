@@ -1,6 +1,10 @@
 /*******************************
-        Application
+        Common
 *******************************/
+
+.ui.vertical.menu .menu .item {
+  font-size: 14px!important;
+}
 
 .ui.modal>.content {
   font-size: 14px!important;

@@ -1,8 +1,6 @@
 
 import '../common/base';
 
-import tplBody from '../../_templates/home/index.hbs';
-
 {
 
   /**
