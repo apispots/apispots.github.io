@@ -2,6 +2,15 @@
         Common
 *******************************/
 
+body {
+  font-size: 17px!important;
+}
+
+.main.container>p {
+  font-size: 17px!important;
+  line-height: 1.8!important;
+}
+
 .ui.vertical.menu .menu .item {
   font-size: 14px!important;
 }

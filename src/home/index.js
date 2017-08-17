@@ -1,4 +1,3 @@
-
 import '../common/base';
 
 {
@@ -9,19 +8,12 @@ import '../common/base';
    */
   const onReady = function() {
 
-    // fix menu when passed
-    $('.masthead')
-      .visibility({
-        once: false,
-        onBottomPassed() {
-          $('.fixed.menu').transition('fade in');
-        },
-        onBottomPassedReverse() {
-          $('.fixed.menu').transition('fade out');
-        }
-      });
+    
+
 
   };
+
+
 
 
   // attach ready event
