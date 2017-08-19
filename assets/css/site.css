@@ -6,6 +6,11 @@ body {
   font-size: 17px!important;
 }
 
+blockquote p {
+  font-size: 17px!important;
+  line-height: 1.8!important;
+}
+
 .main.container>p {
   font-size: 17px!important;
   line-height: 1.8!important;

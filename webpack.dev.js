@@ -8,7 +8,8 @@ let webpackConfig = {
   context: path.resolve(__dirname, 'src/'),
 
   entry: {
-    home: './home/index.js'
+    home: './home/index.js',
+    docs: './docs/index.js'
   },
 
   output: {
@@ -21,7 +22,7 @@ let webpackConfig = {
     port: 8080
   },
 
-  devtool: "#cheap-source-map",
+  devtool: '#cheap-source-map',
 
   plugins: [
 
@@ -46,40 +47,40 @@ let webpackConfig = {
 webpackConfig = merge(webpackConfig, {
   module: {
     rules: [{
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: 'css-loader'
-        })
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      {
-        test: /\.html$/,
-        loader: "html-loader"
-      },
-      {
-        test: /\.hbs$/,
-        use: [{
-          loader: 'handlebars-loader',
-          options: {
-            rootRelative: path.join(__dirname, '_templates/'),
-            knownHelpers: [
-              'eq'
-            ],
-            knownHelpersOnly: false
-          }
-        }]
-      }
+      test: /\.css$/,
+      use: ExtractTextPlugin.extract({
+        use: 'css-loader'
+      })
+    },
+    {
+      test: /\.(png|svg|jpg|gif)$/,
+      use: [
+        'file-loader'
+      ]
+    },
+    {
+      test: /\.(woff|woff2|eot|ttf|otf)$/,
+      use: [
+        'file-loader'
+      ]
+    },
+    {
+      test: /\.html$/,
+      loader: 'html-loader'
+    },
+    {
+      test: /\.hbs$/,
+      use: [{
+        loader: 'handlebars-loader',
+        options: {
+          rootRelative: path.join(__dirname, '_templates/'),
+          knownHelpers: [
+            'eq'
+          ],
+          knownHelpersOnly: false
+        }
+      }]
+    }
     ]
   }
 });

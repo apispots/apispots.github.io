@@ -8,7 +8,8 @@ let webpackConfig = {
   context: path.resolve(__dirname, 'src/'),
 
   entry: {
-    home: './home/index.js'
+    home: './home/index.js',
+    docs: './docs/index.js'
   },
 
   output: {
@@ -40,6 +41,7 @@ let webpackConfig = {
     }),
 
     new webpack.optimize.UglifyJsPlugin({
+      parallel: true,
       beautify: false,
       mangle: {
         screw_ie8: true,
