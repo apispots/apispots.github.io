@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: API Spots
+title: Docs - API Spots
 excerpt: "APIs for Humans"
 search_omit: true
 permalink: /docs/openapis/
