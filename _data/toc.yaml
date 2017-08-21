@@ -1,0 +1,10 @@
+- section: Open APIs
+  title: Exploring Open APIs
+  description: Discover, explore and interact with Open API definitions
+  pages:
+    - title: Introduction
+      url: /docs/openapis/
+    - title: Open API definitions
+      url: /docs/openapis/definitions
+    - title: Open catalogs
+      url: /docs/openapis/catalogs

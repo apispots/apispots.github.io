@@ -10,7 +10,7 @@ import '../../assets/css/docs.css';
    */
   const onReady = function() {
 
-
+    $('.ui.accordion').accordion();
   };
 
 
