@@ -1,3 +1,10 @@
+- section: The basics
+  title: Learn how to install and use
+  description: Learn the basics
+  pages:
+    - title: What is API Spots and how to install
+      url: /docs/intro/
+
 - section: Open APIs
   title: Exploring Open APIs
   description: Discover, explore and interact with Open API definitions

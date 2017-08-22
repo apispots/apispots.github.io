@@ -6,7 +6,7 @@ search_omit: true
 permalink: /docs/
 ---
 {: .ui .dividing .header}
-# Using API Spots
+# Table of contents
 
 {% for entry in site.data.toc %}
 
@@ -14,11 +14,11 @@ permalink: /docs/
 <p>{{entry.description}}</p>
 
 <div class="ui styled accordion">
-  <div class="title">
+  <div class="title active">
     <i class="dropdown icon"></i>
     {{entry.section}}
   </div>
-  <div class="content">
+  <div class="content active">
     <div class="ui list">
       {% for page in entry.pages %}
         <a class="item" href="{{page.url}}">{{page.title}}</a>
