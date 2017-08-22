@@ -1288,6 +1288,10 @@ blockquote p {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.main.container {
+  padding: 2em 0em 2em;
+}
+
 /*******************************
   Master headers backgrounds
 *******************************/
