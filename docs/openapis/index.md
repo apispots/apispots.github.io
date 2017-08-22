@@ -26,8 +26,8 @@ Find out more about the Open APIs initiative at the [official website](https://w
 
 ### Supported versions
 
-The API Spots project currently supports **v2.0** of the Open API specification (f.k.a. [Swagger](https://swagger.io){:target="_blank"}),
-as the latest **3.0.0** version.  Find out more about the latest specification [here](https://swagger.io/specification){:target="_blank"}.
+The API Spots project currently supports **v2.0** of the Open API specification (f.k.a. [Swagger](https://swagger.io){:target="_blank"})
+and soon the latest **3.0.0** version.  Find out more about the latest specification [here](https://swagger.io/specification){:target="_blank"}.
 
 <a class="ui large basic primary button fluid" href="/docs/openapis/definitions/">
   Read next: Open API definitions
