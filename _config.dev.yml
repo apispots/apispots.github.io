@@ -33,11 +33,11 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 owner:
   name: Chris Spiliotopoulos
   avatar: authors/chris.jpg
-  email: chrysanthos.spiliotopoulos@gmail.com
+  email: apispots@gmail.com
   disqus-shortname: thechefarchitect
   twitter: apispots
   github: https://github.com/apispots
-  linkedin: spilio
+  linkedin: https://www.linkedin.com/in/spilio
   google:
     analytics: UA-57180016-1
 
