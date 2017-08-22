@@ -25,7 +25,7 @@ will take you to the Chrome Web store and add the extension.
 
 ## Something is not working as it should... what do I do?
 
-The project is hosted at <i class="github icon"></i> [Github](https://github.com){: target="_blank"}
+The project is hosted at <i class="github icon"></i> [Github](https://github.com/apispots/apispots-extension){: target="_blank"}
 so click on the button below and file a ticket,
 describing the issue you are facing.
 
