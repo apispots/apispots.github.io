@@ -10,22 +10,17 @@ permalink: /docs/
 
 {% for entry in site.data.toc %}
 
-<h3>{{entry.title}}</h3>
-<p>{{entry.description}}</p>
+<h2>{{entry.title}}</h2>
+<blockquote>{{entry.description}}</blockquote>
 
-<div class="ui styled accordion">
-  <div class="title active">
-    <i class="dropdown icon"></i>
-    {{entry.section}}
-  </div>
-  <div class="content active">
-    <div class="ui list">
-      {% for page in entry.pages %}
-        <a class="item" href="{{page.url}}">{{page.title}}</a>
-      {% endfor %}
-    </div>
-  </div>
+<h3>{{entry.section}}</h3>
+
+<div class="ui list">
+  {% for page in entry.pages %}
+    <a class="item" href="{{page.url}}">{{page.title}}</a>
+  {% endfor %}
 </div>
+
 
 {% endfor %}
 

@@ -4,6 +4,8 @@
   pages:
     - title: What is API Spots and how to install
       url: /docs/intro/
+    - title: Frequently Asked Questions
+      url: /faq/
 
 - section: Open APIs
   title: Exploring Open APIs
@@ -15,3 +17,10 @@
       url: /docs/openapis/definitions
     - title: Open catalogs
       url: /docs/openapis/catalogs
+
+- section: Data stories
+  title: Interacting with APIs
+  description: Interact with APIs through a human friendly layer
+  pages:
+    - title: Introduction
+      url: /docs/openapis/

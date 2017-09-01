@@ -8,7 +8,7 @@ permalink: /faq/
 {: .ui .dividing .header}
 # API Spots FAQ
 
-## What is this?
+## What is it all about?
 
 The API Spots is an open-source collection of tools for discovering,
 exploring and interacting with APIs.  One of the main goals of the
@@ -31,3 +31,35 @@ describing the issue you are facing.
 
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/apispots/apispots-extension/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue apispots/apispots-extension on GitHub">Issue</a>
+
+## Where do my data live?
+
+The API Spots Chrome extension is **not** using any **owned** servers for storing
+and exchanging data.  This means that all data the extension is managing
+are stored locally on your browser.  
+
+In the case of 3rd party service integrations (e.g. with Github) you will be asked
+for granting any required permissions.
+
+{: id="opensource"}
+## Open Source
+
+The API Spots is 100% open source software hosted over at [Github](https://github.com/apispots/apispots-extension){: target="_blank"}.
+
+Some of the projects in use are:
+
+<div class="ui bulleted list">
+
+{% for entry in site.data.opensource %}
+
+  <a class="item" href="{{entry.url}}" target="_blank">{{entry.title}}</a>
+
+{% endfor %}
+
+</div>
+
+... and many more.
+
+## Graphics
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

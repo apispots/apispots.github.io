@@ -16,11 +16,6 @@ The project aims to become the bridge that will
 help onboard any type of user to the world of APIs,
 without the need of a technical background.
 
-Why APIs are important?
-
-- [API Evangelist](http://101.apievangelist.com/){:target="_blank"}
-- [Forbes](https://www.forbes.com/sites/louiscolumbus/2017/01/29/2017-is-quickly-becoming-the-year-of-the-api-economy){:target="_blank"}
-
 ## Installation
 
 The API Spots collection of tools is distributed as a Chrome browser extension and you
