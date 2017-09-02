@@ -21,7 +21,6 @@ permalink: /docs/
   {% endfor %}
 </div>
 
-
 {% endfor %}
 
 
