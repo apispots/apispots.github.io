@@ -9,6 +9,12 @@ permalink: /releases/
 # API Spots Release History
 
 {: class="ui large primary blue label"}
+## v2.1.2
+
+- Notify users on available extension updates
+- Display summarized operations in paths view
+
+{: class="ui large basic blue label"}
 ## v2.1.1
 
 - <i class="red bug icon" title="bugfix"></i> Table visualizer fails to display data with empty elements
