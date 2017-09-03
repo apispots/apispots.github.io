@@ -33,6 +33,7 @@ describing the issue you are facing.
 <a class="github-button" href="https://github.com/apispots/apispots-extension/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue apispots/apispots-extension on GitHub">Issue</a>
 
 ## Where do my data live?
+{: id="where-do-my-data-live"}
 
 The API Spots Chrome extension is **not** using any **owned** servers for storing
 and exchanging data.  This means that all data the extension is managing
@@ -40,6 +41,9 @@ are stored locally on your browser.
 
 In the case of 3rd party service integrations (e.g. with Github) you will be asked
 for granting any required permissions.
+
+All locally saved data will be removed once the extension itself is removed from
+Chrome.
 
 {: id="opensource"}
 ## Open Source
