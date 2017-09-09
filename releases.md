@@ -8,30 +8,54 @@ permalink: /releases/
 {: .ui .dividing .header}
 # API Spots Release History
 
-
-
 {% for release in site.data.releases %}
 
-  <h2 class="ui large basic blue label" id="v{{release.version}}">v{{release.version}}</h2>
+  <div class="ui segment">
 
-  <ul>
+    {% if forloop.index == 1 %}
+      {% assign classes = 'primary blue' %}
+    {% else %}
+      {% assign classes = 'basic blue' %}
+    {% endif %}
 
-    {% for item in release.items %}
-      <li>
+    <h2 class="ui large {{classes}} label" id="v{{release.version}}">v{{release.version}}</h2>
 
-        {{item.title}}
+    <div class="ui relaxed divided list">
 
-        {% if item.type == 'bugfix' %}
-          <span class="ui red basic mini label">bugfix</span>
-        {% elsif item.type == 'feature' %}
-          <span class="ui green basic mini label">new</span>
-        {% elsif item.type == 'enhancement' %}
-          <span class="ui orange basic mini label">enhancement</span>
-        {% endif %}
+      {% for item in release.items %}
+        <li class="item">
 
-      </li>
-    {% endfor %}
+          {% if item.url %}
 
-  </ul>
+            {% assign url = item.url %}
+
+            {% if url != contains 'http' %}
+                {% assign url = site.url | append: item.url %}
+            {% endif %}
+
+            <a href="{{url}}" target="_blank">
+              {{item.title}}
+            </a>
+          {% else %}      
+            {{item.title}}
+          {% endif %}
+
+          {% if item.type == 'bugfix' %}
+            {% assign color = 'red' %}
+          {% elsif item.type == 'feature' %}
+            {% assign color = 'green' %}
+          {% elsif item.type == 'enhancement' %}
+            {% assign color = 'orange' %}
+          {% endif %}
+
+
+          <span class="ui right floated {{color}} basic mini label">{{item.type}}</span>
+
+        </li>
+      {% endfor %}
+
+    </div>
+
+  </div>  
 
 {% endfor %}

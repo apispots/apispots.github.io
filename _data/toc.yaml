@@ -13,8 +13,10 @@
   pages:
     - title: Introduction
       url: /docs/openapis/
-    - title: Open API definitions
+    - title: API definitions
       url: /docs/openapis/definitions
+    - title: API Security
+      url: /docs/openapis/security
     - title: Open catalogs
       url: /docs/openapis/catalogs
 

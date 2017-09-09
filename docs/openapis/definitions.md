@@ -104,6 +104,7 @@ Displays the list of defined security definitions, including information about
 ![Security definitions]({{site.url}}/assets/images/docs/openapis/definitions/section-security.png){:class="ui image bordered"}
 
 ### Operations
+{: id="operations"}
 
 Displays the list of supported API operations in a number of ways.
 
@@ -132,7 +133,7 @@ and edges glue them together into paths.  Double-clicking on a node will bring u
 
 ![Paths list]({{site.url}}/assets/images/docs/openapis/definitions/graph.png){:class="ui image bordered"}
 
-<a class="ui large basic primary button fluid" href="/docs/openapis/catalogs/">
-  Read next: Open API catalogs
+<a class="ui large basic primary button fluid" href="/docs/openapis/security/">
+  Read next: API Security
   <i class="right chevron icon"></i>
 </a>

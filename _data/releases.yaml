@@ -1,11 +1,11 @@
 - version: 2.2.0
   items:
-    - title: Update notifications should only happen for major / minor versions
-      type: enhancement
     - title: Support HTTP API key authentication
       type: feature
+      url: /docs/openapis/security
     - title: Support HTTP basic authentication
       type: feature
+      url: /docs/openapis/security
     - title: APIs.JSON content scanner should check for lower-case version of the properties as well
       type: bugfix
     - title: APIs.JSON catalogs might be arrays
@@ -21,10 +21,11 @@
 
 - version: 2.1.2
   items:
-    - title: Notify users on available extension updates
+    - title: Notify user on available extension updates
       type: feature
     - title: Display summarized operations in paths view
       type: feature
+      url: /docs/openapis/definitions#operations
 
 - version: 2.1.1
   items:
@@ -37,11 +38,13 @@
       type: feature
     - title: Execute basic API operations through data stories
       type: feature
+      url: /docs/datastories/
 
 - version: 2.0.2
   items:
     - title: Open APIs explorer - Display required properties in model definition details
       type: feature
+      url: /docs/openapis/definitions#data-definitions
     - title: Local Open APIs and catalog files not working
       type: bugfix
 
@@ -49,8 +52,10 @@
   items:
     - title: APIs.guru catalog integration
       type: feature
+      url: /docs/openapis/catalogs
     - title: API Evangelist catalog integration
       type: feature
+      url: /docs/openapis/catalogs
     - title: APIs.JSON explorer
       type: feature
 
