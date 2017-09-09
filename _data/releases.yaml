@@ -1,0 +1,81 @@
+- version: 2.2.0
+  items:
+    - title: Update notifications should only happen for major / minor versions
+      type: enhancement
+    - title: Support HTTP API key authentication
+      type: feature
+    - title: Support HTTP basic authentication
+      type: feature
+    - title: APIs.JSON content scanner should check for lower-case version of the properties as well
+      type: bugfix
+    - title: APIs.JSON catalogs might be arrays
+      type: bugfix
+    - title: Better support for APIs.JSON URLs in properties if base URL is provided
+      type: enhancement
+    - title: Required properties were not highlighted in definition modal
+      type: bugfix
+    - title: Input dataset definition form missed out required properties
+      type: bugfix
+    - title: API explorer menu - If no bookmarks, Home link is not displayed
+      type: bugfix
+
+- version: 2.1.2
+  items:
+    - title: Notify users on available extension updates
+      type: feature
+    - title: Display summarized operations in paths view
+      type: feature
+
+- version: 2.1.1
+  items:
+    - title: Table visualizer fails to display data with empty elements
+      type: bugfix
+
+- version: 2.1.0
+  items:
+    - title: API spots bookmark support
+      type: feature
+    - title: Execute basic API operations through data stories
+      type: feature
+
+- version: 2.0.2
+  items:
+    - title: Open APIs explorer - Display required properties in model definition details
+      type: feature
+    - title: Local Open APIs and catalog files not working
+      type: bugfix
+
+- version: 2.0.1
+  items:
+    - title: APIs.guru catalog integration
+      type: feature
+    - title: API Evangelist catalog integration
+      type: feature
+    - title: APIs.JSON explorer
+      type: feature
+
+
+- version: 2.0.0
+  items:
+    - title: Changed project name from **swagger.ed** to **API Spots**
+      type: feature
+    - title: Swagger 2.0 support
+      type: feature
+    - title: Open API definition in-context detection
+      type: feature
+    - title: API Explorer - General information
+      type: feature
+    - title: API Explorer - Data definitions
+      type: feature
+    - title: API Explorer - Security definitions
+      type: feature
+    - title: API Explorer - Operations
+      type: feature
+    - title: API Explorer - Paths list
+      type: feature
+    - title: API Explorer - Security definitions
+      type: feature
+    - title: API Explorer - Resource network graph
+      type: feature
+    - title: APIs.JSON in-context detection
+      type: feature
