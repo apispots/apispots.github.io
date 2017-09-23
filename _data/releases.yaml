@@ -1,3 +1,14 @@
+- version: 2.3.0
+  items:
+    - title: Download story output as flat CSV
+      type: feature
+    - title: Search support for data stories
+      type: feature
+    - title: Remove bookmarked API spots from Open APIs page
+      type: feature
+    - title: When Open API definition is not available screen locks in loading mode and user cannot navigate elsewhere
+      type: bugfix
+
 - version: 2.2.0
   items:
     - title: Support HTTP API key authentication
