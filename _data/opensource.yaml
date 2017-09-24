@@ -1,5 +1,7 @@
 - title: Semantic UI
   url: https://semantic-ui.com/
+- title: jQuery
+  url: https://jquery.com/
 - title: Swagger
   url: https://swagger.io/
 - title: Handlebars
@@ -14,3 +16,5 @@
   url: http://chaijs.com/
 - title: Webpack
   url: https://webpack.js.org/
+- title: Ace Editor
+  url: https://ace.c9.io/

@@ -1,5 +1,9 @@
 - version: 2.3.0
   items:
+    - title: JSON response viewer
+      type: feature
+    - title: XML response viewer
+      type: feature
     - title: Download story output as flat CSV
       type: feature
     - title: Search support for data stories
