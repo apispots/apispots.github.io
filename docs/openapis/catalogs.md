@@ -40,12 +40,12 @@ with great impact within the space.
           APIs.guru
         </h2>
         <p>
-        Semantic has integrations with <b>React, Angular, Meteor, Ember</b> and many other frameworks to help organize your UI layer alongside your application logic.
+        Our goal is to create a machine-readable Wikipedia for REST APIs.
         </p>
-        <a class="ui button" href="http://theapistack.com/" target="_blank">
+        <a class="ui button" href="https://apis.guru/openapi-directory/" target="_blank">
           <i class="home icon"></i> Website
         </a>
-        <a class="ui button" href="https://github.com/api-stack/api-stack" target="_blank">
+        <a class="ui button" href="https://github.com/APIs-guru/openapi-directory" target="_blank">
           <i class="github icon"></i> Github
         </a>
       </div>
