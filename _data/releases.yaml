@@ -1,3 +1,10 @@
+- version: 2.3.1
+  items:
+    - title: Increased modal to fullscreen size
+      type: enhancement
+    - title: CSV media type enabled by default
+      type: bugfix
+
 - version: 2.3.0
   items:
     - title: JSON response viewer
