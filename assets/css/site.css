@@ -51,3 +51,16 @@ blockquote p {
   background-image: url("/assets/images/home/header.jpg")!important;
   background-size: auto;
 }
+
+
+.casestudy .masthead.segment {
+    min-height: 500px;
+}
+
+.casestudy .masthead h1.ui.header {
+    margin-top: 2em;
+}
+
+.casestudy .ui.header>.image:not(.icon),.ui.header>img {
+    width: 8em;
+}

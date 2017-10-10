@@ -1,18 +1,31 @@
 swagger: '2.0'
 info:
   title: "Unistats API"
-  description: "Compare official course data from universities and colleges"
-  termsOfService: "http://dataportal.unistats.ac.uk/"
+  description: "Compare official course data from universities and colleges."
+  termsOfService: "http://unistats.ac.uk/terms-of-use/"
   contact:
-    name: Open Referral
+    name: Unistats
     url: https://openreferral.org/
-    email: info@openreferral.org
+    email: unistats@hefce.ac.uk
   license:
-    name: Open Data Commons Public Domain
-    url: http://opendatacommons.org/licenses/pddl/
+    name: Open Government Licence
+    url: https://en.wikipedia.org/wiki/Open_Government_Licence
   version: v4
 host: data.unistats.ac.uk
 basePath: /api/v4/KIS
+
+tags:
+  - name: Institution
+    description: Instituition related operations
+  - name: Institution
+    description: Instituition related operations
+
+externalDocs:
+  url: http://dataportal.unistats.ac.uk/
+  description: >
+    You can find out more information about the
+    Unistats API at the official developer portal.
+
 
 schemes:
 - http
@@ -23,7 +36,10 @@ produces:
 securityDefinitions:
   basic:
     type: basic
-    description: The Unistats API uses HTTP Basic Auth. Every request for data requires authenticating with an active access token. When authenticating, use the access token as the username. The password can be anything.
+    description: >
+      The Unistats API uses HTTP Basic Auth. Every request for data requires
+      authenticating with an active access token. When authenticating,
+      use the access token as the username. The password can be anything.
 
 paths:
   /Institutions:
@@ -421,13 +437,13 @@ definitions:
         description: Can location change during course?
         type: boolean
       SandwichAvailable:
-        description: Is sandwich available?
+        description: Are sandwich courses available?
         type: number
       SupportDetailsUrl:
-        description: The URL of sandwich details
+        description: The URL of sandwich course details
         type: string
       SupportDetailsUrlWales:
-        description: The URL of sandwich details in Welsh
+        description: The URL of sandwich course details in Welsh
         type: string
       Title:
         description: The course title

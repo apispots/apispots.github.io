@@ -1,3 +1,18 @@
+- version: 2.4.0
+  items:
+    - title: Story duplication
+      type: feature
+    - title: Save raw result set to file
+      type: feature
+    - title: Text visualizer
+      type: feature
+    - title: Story execution time
+      type: enhancement
+    - title: Save blob responses to local file
+      type: feature
+    - title: Raw payload support
+      type: feature
+
 - version: 2.3.1
   items:
     - title: Increased modal to fullscreen size

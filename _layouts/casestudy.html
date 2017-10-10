@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+  {% include head.html %}
+
+</head>
+
+<body class="casestudy">
+
+  <div class="pusher">
+
+    <div class="ui inverted vertical masthead center aligned segment"
+      style="background-image: url('{{site.url}}/assets/images/casestudies/background.png')">
+
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <a class="active item" href="{{site.url}}/">Home</a>
+        </div>
+      </div>
+
+      <div class="ui text container">
+        <h1 class="ui inverted header">
+          <img class="ui large circular image" src="{{page.cs_background}}">
+          {{page.cs_title}}
+        </h1>
+        <h2>{{page.cs_description}}</h2>
+        <a class="ui huge inverted button" href="#section-openapis">Get started</a>
+        <a class="ui huge button" href="https://apispots.github.io/docs/openapis/" target="_blank">Read the docs</a>
+      </div>
+
+    </div>
+
+    <div class="full height">
+
+      <div class="article">
+
+        <div class="ui main text container">
+
+          {{content}}
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="ui black inverted vertical footer segment">
+      {% include common/footer.html %}
+    </div>
+
+  </div>
+
+  <script src="{{site.url}}/dist/docs.bundle.js"></script>
+
+</body>
+
+</html>
