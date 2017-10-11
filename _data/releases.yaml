@@ -1,3 +1,8 @@
+- version: 2.4.1
+  items:
+    - title: If response is Blob with length equals 0 the download modal is displayed
+      type: bugfix
+
 - version: 2.4.0
   items:
     - title: Story duplication
