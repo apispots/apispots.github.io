@@ -42,14 +42,13 @@ blockquote p {
   Master headers backgrounds
 *******************************/
 
-.masthead {
-  background-repeat: no-repeat!important;
-  background-size: cover!important;
-}
+
 
 #home .masthead {
-  background-image: url("/assets/images/home/header.jpg")!important;
-  background-size: auto;
+  background: #fc4a1a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 

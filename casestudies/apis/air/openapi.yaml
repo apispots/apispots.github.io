@@ -1,0 +1,324 @@
+swagger: '2.0'
+info:
+  description: >-
+    Air by Propeller Open API enables developers to use Propeller's asthma
+    condition forecast in their own applications.
+  version: 1.0.0
+  title: Air by Propeller Open API
+  termsOfService: 'https://www.propellerhealth.com/air-by-propeller-terms-of-service'
+  contact:
+    name: Propeller Platform Team
+    email: api@propellerhealth.com
+    url: 'https://www.propellerhealth.com'
+host: open.propellerhealth.com
+basePath: /prod
+tags:
+  - name: forecast
+    description: Respiratory forecast resource
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /forecast:
+    get:
+      tags:
+        - forecast
+      summary: Gets current asthma condition forecast for a geo location.
+      description: Gets current asthma condition forecast for a geo location.
+      operationId: getForecast
+      parameters:
+        - $ref: '#/parameters/apiVersion'
+        - name: latitude
+          in: query
+          description: latitude of the location.
+          type: number
+          format: double
+          minimum: -90
+          maximum: 90
+        - name: longitude
+          in: query
+          description: longitude of the location.
+          type: number
+          format: double
+          minimum: -180
+          maximum: 180
+        - name: postalCode
+          in: query
+          description: postal code of the location
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/forecast'
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+        '400':
+          description: Bad Request
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+          schema:
+            $ref: '#/definitions/errorResponse'
+        '500':
+          description: Server Error
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+    options:
+      summary: CORS support
+      description: |
+        Enable CORS by returning correct headers
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      tags:
+        - forecast
+      x-amazon-apigateway-integration:
+        type: mock
+        requestTemplates:
+          application/json: |
+            {
+              "statusCode" : 200
+            }
+        responses:
+          default:
+            statusCode: '200'
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key'''
+              method.response.header.Access-Control-Allow-Methods: '''*'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            responseTemplates:
+              application/json: |
+                {}
+      responses:
+        '200':
+          description: Default response for CORS method
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+  /forecasts:
+    get:
+      tags:
+        - forecast
+      summary: Gets current asthma condition forecast for a bounded box geo location.
+      description: Gets current asthma condition forecast for a bounded box geo location.
+      operationId: getForecasts
+      parameters:
+        - $ref: '#/parameters/apiVersion'
+        - name: minLatitude
+          in: query
+          description: minimum Latitude of the bounded box.
+          type: number
+          format: double
+          minimum: -90
+          maximum: 90
+          required: true
+        - name: minLongitude
+          in: query
+          description: minimum longitude of the bounded box.
+          type: number
+          format: double
+          minimum: -180
+          maximum: 180
+          required: true
+        - name: maxLatitude
+          in: query
+          description: maximum Latitude of the bounded box.
+          type: number
+          format: double
+          minimum: -90
+          maximum: 90
+          required: true
+        - name: maxLongitude
+          in: query
+          description: maximum longitude of the bounded box.
+          type: number
+          format: double
+          minimum: -180
+          maximum: 180
+          required: true
+      responses:
+        '200':
+          description: Success
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+          schema:
+            $ref: '#/definitions/getForecastsResponse'
+        '400':
+          description: Bad Request
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+          schema:
+            $ref: '#/definitions/errorResponse'
+        '500':
+          description: Server Error
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+    options:
+      summary: CORS support
+      description: |
+        Enable CORS by returning correct headers
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      tags:
+        - forecast
+      x-amazon-apigateway-integration:
+        type: mock
+        requestTemplates:
+          application/json: |
+            {
+              "statusCode" : 200
+            }
+        responses:
+          default:
+            statusCode: '200'
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key'''
+              method.response.header.Access-Control-Allow-Methods: '''*'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            responseTemplates:
+              application/json: |
+                {}
+      responses:
+        '200':
+          description: Default response for CORS method
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+            Access-Control-Allow-Methods:
+              type: string
+            Access-Control-Allow-Origin:
+              type: string
+definitions:
+  getForecastsResponse:
+    type: object
+    required:
+      - features
+      - type
+    properties:
+      type:
+        description: >-
+          GeoJSON FeatureCollection for forecast GeoJSON features in the bounded
+          box
+        type: string
+        enum:
+          - FeatureCollection
+      features:
+        description: Array of forecast GeoJSON features in the bounded box
+        type: array
+        items:
+          $ref: '#/definitions/forecast'
+  errorResponse:
+    type: object
+    required:
+      - id
+      - description
+    properties:
+      id:
+        description: ID of the error code
+        type: string
+      description:
+        description: Description of the error
+        type: string
+  forecast:
+    description: GeoJSON Feature for a respiratory forecast
+    type: object
+    required:
+      - geometry
+      - properties
+      - type
+    properties:
+      geometry:
+        $ref: '#/definitions/point'
+      properties:
+        type: object
+        required:
+          - code
+          - value
+        properties:
+          code:
+            description: >-
+              Code for the asthma condition forecast.  Where `low` means there is a
+              low risk of an adverse respiratory conditions and `high` means
+              there is a high risk of an adverse respiratory conditions.
+            type: string
+            enum:
+              - high
+              - low
+              - medium
+          value:
+            description: >-
+              Forecast probability value for adverse respiratory conditions.
+              With 0 being no probability and 1 being maximum probability.
+            type: number
+            format: double
+            minimum: 0
+            maximum: 1
+      type:
+        description: GeoJSON type for the forecast
+        type: string
+        enum:
+          - Feature
+  point:
+    type: object
+    description: GeoJSon Point geometry
+    properties:
+      coordinates:
+        type: array
+        maxItems: 2
+        minItems: 2
+        items:
+          type: number
+      type:
+        type: string
+        enum:
+          - Point
+parameters:
+  apiVersion:
+    name: x-ph-api-version
+    in: header
+    description: Propeller Health Forecast API version 1.0.0
+    type: string
+    enum:
+      - 1.0.0
+    required: false
+    default: 1.0.0
