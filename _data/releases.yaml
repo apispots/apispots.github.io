@@ -1,3 +1,8 @@
+- version: 2.4.2
+  items:
+    - title: Changed extension icon and logo
+      type: enhancement
+
 - version: 2.4.1
   items:
     - title: If response is Blob with length equals 0 the download modal is displayed
