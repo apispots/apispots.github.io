@@ -1,3 +1,14 @@
+- version: 2.4.3
+  items:
+    - title: Clickable operation descriptions
+      type: enhancement
+    - title: Switched to DataTables for visualizing results in a table
+      type: enhancement
+    - title: Added Copy / CSV export buttons in table visualizer
+      type: enhancement
+    - title: Fixed data stories search action
+      type: bugfix
+
 - version: 2.4.2
   items:
     - title: Changed extension icon and logo
