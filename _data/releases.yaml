@@ -1,3 +1,8 @@
+- version: 2.4.4
+  items:
+    - title: Fixed story duplication issue with invalid title
+      type: bugfix
+
 - version: 2.4.3
   items:
     - title: Clickable operation descriptions
