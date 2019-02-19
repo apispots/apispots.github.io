@@ -33,3 +33,4 @@ package-lock.json
 extension/dist/*
 
 /_site
+Gemfile.lock
