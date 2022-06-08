@@ -1,0 +1,967 @@
+{
+    "name": "TMF Forum Open APIs",
+    "description": "In order to meet these challenges, TM Forum members including the world’s largest service providers and suppliers, have been working to develop APIs that enable the open digital ecosystem and provide critical management functionality to digital services.",
+    "image": "https://projects.tmforum.org/wiki/download/thumbnails/84575796/swaggerGreenApache.png",
+    "tags": [
+     "Application Programming Interface",
+     "API"
+    ],
+    "created": "2014-04-07",
+    "modified": "2020-09-03",
+    "url": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+    "specificationVersion": "0.14",
+    "apis": [
+     {
+      "name": "TMF666 - Account Management API",
+      "description": "Provides standardized mechanism for the management of billing and settlement accounts, as well as for financial accounting (account receivable) either in B2B or B2B2C contexts",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF666-Account-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF651 - Agreement Management API",
+      "description": "The Agreement API provides a standardized mechanism for managing agreements, especially in the context of partnerships between partners.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF651-Agreement-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF915 - AI Management API Component Suite",
+      "description": "The API Component Suite for AI Management defines the set of operations that should be offered in order that a Service Provider can govern Artificial Intelligence systems deployed at scale. Effective governance and management of AI must span the lifecycle from design through deployment and eventual withdrawal from service. However, the initial focus of the AI Management API is restricted to the in-life aspects of AI and in particular on the management of ‘model contracts’. ",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF915-AIManagement-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF642 - Alarm Management API",
+      "description": "The Alarm Management API applies lessons that were learned in previous generations of similar APIs that were implemented in the Telecommunication industry, starting from ITU recommendations,, TM Forum OSS/J, MTOSI and TIP interfaces, NGMN alignment initiative between 3GPP and TM Forum interfaces, and the more recent ETSI work on requirements for NFV interfaces.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF642-Alarm-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF646 - Appointment API",
+      "description": "The appointment API provides a standardized mechanism to book an appointment with all the necessary appointment characteristics. The API allows searching of free slots based on parameters, as for example a party, then creating the appointment. The appointment has characteristics such as nature of appointment, place of appointment.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF646-Appointment-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF655 - Change Management API",
+      "description": "The Change Management API provides standard integration capabilities between external applications and Change Management Application. The API consists of a simple set of operations that interact with a Change Request in a consistent manner.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF655-Change-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF681 - Communication API",
+      "description": "Provides a capability to create and send communications, notifications, and instructions to Parties, Individuals, Organizations or Users.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF681-Communication-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF678 - Customer Bill Management API",
+      "description": "This API allows operations to find and retrieve one or several customer bills (also called invoices) produced for a customer also allows operations to find and retrieve the details of applied customer billing rates presented on a customer bill.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF678-CustomerBill-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF629 - Customer Management API",
+      "description": "Provides a standardized mechanism for customer and customer account management, such as creation, update, retrieval, deletion and notification of events.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF629-Customer-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF720 - Digital Identity Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF720-DigitalIdentity-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF667 - Document Management API",
+      "description": "Provides the operations to synchronize documents and document versions across systems. It also provides operations for uploading documents by Users as well as for viewing of documents online",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF667-Document-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF662 - Entity Catalog Management API",
+      "description": "The entity catalog is intended to provide any SID entity to consumers via a catalog, with its specification and policy providing governance over its content. The API provides management of the entity specifications and their associations thru CRUD operations.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF662-EntityCatalog-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF710 - General Test Artifact Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF710-GeneralTestArtifact-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF704 - General Test Case Management",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF704-TestCase-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF673 - Geographic Address Management API",
+      "description": "Provides a standardized client interface to an Address management system. It allows looking for worldwide addresses. It can also be used to validate geographic address data, to be sure that it corresponds to a real geographic address. Finally, it can be used to look for a geographic address by: searching an area as a start (city, town ...), then zooming on the streets of this area, and finally listing all the street segments (numbers) in a street.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF673-GeographicAddress-v4.0.1.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF674 - Geographic Site Management API",
+      "description": "Covers the operations to manage (create, read, delete) sites that can be associated with a customer, account, service delivery or other entities. This API defines a Site as a convenience class that allows easy reference to places important to other entities, where a geographic place is an entity that can answer the question “where?”",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF674-GeographicSite-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF668 - Partnership Type Management API",
+      "description": "Standardized mechanisms for creating partnership types. It is one of the APIs involved in an onboarding process. Identifies a type of a partnership between parties, including the list of role types that are permitted (i.e Buyer, Seller, Developer). Role types may refer to agreement specifications to be signed by parties playing the role. The API allows the retrieval, creation, update, and deletion of partnership type and its owned sub-resources.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF668-PartnershipType-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF683 - Party Interaction Management API",
+      "description": "A User Interaction captures information about past interactions in order to re-use it in future ones. This allows agents to serve users better by knowing the steps they went through. It also allows customers to see better the actions they have performed and how they interacted with us.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF683-PartyInteraction-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF632 - Party Management API",
+      "description": "Provides a standardized mechanism for party management such as creation, update, retrieval, deletion and notification of events.Party can be an individual or an organization that has any kind of relationship with the enterprise.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF632-Party-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF669 - Party Role Management API",
+      "description": "A standardized mechanism for general party roles and includes operations such as creation, update, retrieval, deletion and notification of events. Notice that for the management of customers there is a specific Customer Management API.Party Role management API manages the following data resources: PartyRole",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF669-PartyRole-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF676 - Payment Management API",
+      "description": "The Payments API provides the standardized client interface to Payment Systems for notifying about performed payments or refunds. Examples of Payment API originators (clients) include Web servers, mobile app servers, Contact center dashboards or retail store systems. ",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF676-Payment-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF670 - Payment Methods API",
+      "description": "This API supports the frequently-used payment methods for the customer to choose and pay the usage, including voucher card, coupon, and money transfer.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF670-PaymentMethod-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF654 - Prepay Balance Management API",
+      "description": "REST API for Balance Management. It includes the model definition as well as all available operations for prepay balance management. Prepaid subscribers pay fees before using services. Therefore, the subscribers must have sufficient balances. Operators can provide multiple recharge channels for subscribers. Subscribers can pass credit between different subscriptions, therefore transferring the balance from one account to another.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF654-PrepayBalance-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF644 - Privacy Management API",
+      "description": "The Privacy management API provides a standardized mechanism for privacy profile types, privacy profiles and privacy agreements such as creation, update, retrieval, deletion and notification of events",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF644-Privacy-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF620 - Product Catalog Management API",
+      "description": "Provides a standardized solution for rapidly adding partners’ products to an existing Catalog. It brings the capability for Service Providers to directly feed partners systems with the technical description of the products they propose to them. ",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.1.0/swagger/TMF620-ProductCatalog-v4.1.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF637 - Product Inventory Management API",
+      "description": "Provides standardized mechanism for product inventory management such as creation, partial or full update and retrieval of the representation of a product in the inventory. It also allows the notification of events related to product lifecycle.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF637-ProductInventory-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF679 - Product Offering Qualification API",
+      "description": "Product Offering Qualification API is one of Pre-Ordering Management API Family. Product Offering Qualification API goal is to provide Product Offering commercial eligibility.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF679-ProductOfferingQualification-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF622 - Product Ordering API",
+      "description": "Provides a standardized mechanism for placing a product order with all of the necessary order parameters. The API consists of a simple set of operations that interact with CRM/Order negotiation systems in a consistent manner. A product order is created based on a product offering that is defined in a catalog. The product offering identifies the product or set of products that are available to a customer and includes characteristics such as pricing, product options and market.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF622-ProductOrder-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF671 - Promotion API",
+      "description": "Used to provide the additional discount, voucher, bonus or gift to the customer who meets the pre-defined criteria. Using promotion, the enterprise is able to attract the users and encourage more consumption, especially continuous purchases. Normally Promotion is not regarded as one type of product or product offering. It is often applied when the customer buys the product offerings with the price or amount surpassing the certain limit",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.1.0/swagger/TMF671-Promotion-v4.1.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF648 - Quote Management API",
+      "description": "The Quote API is one of the Pre-Ordering Management APIs. The customer Quote API provides a standardized mechanism for placing a customer quote with all of the necessary quote parameters.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF648-Quote-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF680 - Recommendation API",
+      "description": "Recommendation API is used to recommend offering quickly based on the history and real-time context of a customer. It is a real-time and personalized recommendation API. It is usually provided by e-commerce or BSS, CRM system in omni-channel.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF680-Recommendation-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF634 - Resource Catalog Management API",
+      "description": "The Resource Catalog Management API REST specification allows the management of the entire lifecycle of the Resource Catalog elements and the consultation of resource catalog elements during several processes such as ordering process.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.1.0/swagger/TMF634-ResourceCatalog-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF664 - Resource Function Activation and Configuration API",
+      "description": "This API introduces Resource Function which is used to represent a Network Service as well as a Network Function. The Network Service and Network Function class definitions and associations in TR244 (which, in turn, builds on concepts from the SID addenda on Logical Resource and Service) are utilized to define the Resource Function",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF664-ResourceFunctionActivation-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF639 - Resource Inventory Management API",
+      "description": "The intent of this API is to provide a consistent/standardized mechanism to query and manipulate the Resource inventory.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF639-ResourceInventory-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF652 - Resource Ordering Management API",
+      "description": "The REST API for Resource Order Management. It includes the model definition as well as all available operations. Possible actions are creating, updating and retrieving Resource Orders (including filtering). A Resource Order API provides a standard mechanism for placing a Resource Order with all necessary order parameters.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF652-ResourceOrder-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF696 - Risk Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF696-RiskManagement-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF699 - Sales Management API",
+      "description": "The Sales Management API provides interfaces for Sales Lead, Sales Opportunity, Sales Quote and the other management capabilities to support the sales activities to build relationship with the prospect customer who could be a person or organization that has an interest in the goods and/or services and possibly become the actual customers with one or more subscriptions.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF699-Sales-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF640 - Service Activation and Configuration API",
+      "description": "The REST API for Activation and Configuration allows the user to retrieve, create, update, delete services and retrieve the monitor resource used to monitor the execution of asynchronous requests on a specific resource. Although all the examples given in the API specification are relative to Services, the same API can be used to Activate and Configure Services or Resources.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF640-ServiceActivation-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF633 - Service Catalog API",
+      "description": "The Service Catalog Management API allows the management of the entire lifecycle of the service catalog elements.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF633-ServiceCatalog-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF638 - Service Inventory Management API",
+      "description": "The intent of this API is to provide a consistent/standardized mechanism to query and manipulate the Service inventory.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF638-ServiceInventory-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF641 - Service Ordering Management API",
+      "description": "The REST API for Service Order Management provides a standardized mechanism for placing a service order with all of the necessary order parameters. It allows users to create, update & retrieve Service Orders and manages related notifications.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.1.0/swagger/TMF641-ServiceOrdering-v4.1.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF656 - Service Problem Management",
+      "description": "The SPM API is used to manage service problems. Service problems are generated based on the information declared by a partner or the event information notified from infrastructure providers. The event information includes alarm information, performance anomaly information, trouble ticket information, SLA violation, maintenance information, and prediction information.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF656-ServiceProblem-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF645 - Service Qualification API",
+      "description": "Service Qualification API is one of the Pre-Ordering Management APIs. Service Qualification API goal is to provide service availability at Customer location.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF645-ServiceQualification-v4.0.1.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF657 - Service Quality Management API",
+      "description": "Through this API, any Enterprise is able to access a Service Quality Management application and extract Service Level Specifications and associated Service Level Objectives (SLO) and their thresholds.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF657-ServiceQualityManagement-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF653 - Service Test Management API",
+      "description": "The Service Test API provides a standardized mechanism for placing a service test with all of the necessary test parameters. The API consists of a simple set of operations that interact with CRM/Service Management systems in a consistent manner. A service test is a procedure intended to check the quality, performance, or reliability of a service.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.2.0/swagger/TMF653-ServiceTest-v4.2.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF663 - Shopping Cart API",
+      "description": "A standardized mechanism for the management of shopping carts. Including creation, update, retrieval, deletion and notification of an event. Shopping Cart entity is used for the temporary selection and reservation of product offerings in e-commerce and retail purchase.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF663-ShoppingCart-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF687 - Stock Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF687-Stock-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF706 - Test Data Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF706-TestData-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF705 - Test Environment Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF705-TestEnvironment-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF708 - Test Execution Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF708-TestExecution-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF707 - Test Result Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF707-TestResult-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF709 - Test Scenario Management API",
+      "description": "",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF709-TestScenario-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF621 - Trouble Ticket API",
+      "description": "Provides a standardized client interface to Trouble Ticket Management Systems for creating, tracking and managing trouble tickets among partners as a result of an issue or problem identified by a customer or another system. Examples of Trouble Ticket API clients include CRM applications, network management or fault management systems, or other trouble ticket management systems (e.g. B2B).",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF621-TroubleTicket-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF677 - Usage Consumption Management API",
+      "description": "This API provides the real-time value within buckets (SMS, Voice, Data, TV for example) that a customer consumes with each of their devices, related to subscribed communication products without having to wait for the bill cycle. A usage report retrieves the data related to these balances.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF677-UsageConsumption-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF635 - Usage Management API",
+      "description": "Provides standardized mechanism for usage management such as creation, update, retrieval, import and export of a collection of usages. The API manages both rated and non-rated usage. For example, it allows a service provider to 1) retrieve usage generated by a partner service platform in order to rate it and 2) to provide rated usage to a partner for consumption follow up purposes.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF635-UsageManagement-v4.0.0.swagger.json"
+       }
+      ]
+     },
+     {
+      "name": "TMF672 - User Roles & Permissions API",
+      "description": "A user role is defined as the entity that defines a set of privileges covering various functions and/or manageable assets. When a user is assigned a given role then it is actually allocated all the privileges defined for that role type and the corresponding permissions are created for that user.",
+      "image": "https://avatars.githubusercontent.com/u/3430476?s=280&v=4",
+      "humanURL": "http://example.com",
+      "baseURL": "",
+      "properties": [
+       {
+        "type": "x-documentation",
+        "url": "https://example.com/documentation"
+       },
+       {
+        "type": "x-openapi",
+        "url": "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF672-UserRolePermission-v4.0.0.swagger.json"
+       }
+      ]
+     }
+    ]
+   }
